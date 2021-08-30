@@ -1,0 +1,6 @@
+/__mlsql__
+/.result.tmp
+/data
+/logs
+/spark-warehouse
+/velocity.log
