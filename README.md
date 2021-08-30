@@ -13,3 +13,23 @@ This is a mlsql lang example project.
 * ✅ src/PythonScriptExample
 * ✅ src/PublicModuleIncludeExample
 
+
+### ExcelExample
+
+![](docs/images/excel.png)
+
+### MySQLConnectExample
+
+![](docs/images/jdbc.png)
+
+### SimpleMLExample
+
+![](docs/images/simple-ml.png)
+
+### PythonScriptExample
+
+![](docs/images/python-script.png)
+
+### PublicModuleIncludeExample
+
+![](docs/images/module.png)
