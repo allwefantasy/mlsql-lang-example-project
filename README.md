@@ -11,4 +11,5 @@ This is a mlsql lang example project.
 * ✅ src/MySQLConnectExample
 * ✅ src/SimpleMLExample
 * ✅ src/PythonScriptExample
+* ✅ src/PublicModuleIncludeExample
 
