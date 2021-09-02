@@ -12,11 +12,16 @@ This is a mlsql-lang example project.
 * ✅ src/SimpleMLExample
 * ✅ src/PythonScriptExample
 * ✅ src/PublicModuleIncludeExample
+* ✅ src/IfElseExample
 
 
 ### ExcelExample
 
 ![](docs/images/excel.png)
+
+### IfElseExample
+
+![](docs/images/ifelse.png)
 
 ### MySQLConnectExample
 
