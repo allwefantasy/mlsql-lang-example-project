@@ -5,3 +5,4 @@
 /spark-warehouse
 /velocity.log
 src/PP.mlsqlnb
+example-data/custom-download
