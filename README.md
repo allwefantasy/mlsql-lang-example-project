@@ -26,6 +26,7 @@ Before you can run all this examples(contains python script), modify
 * ✅ src/PythonScriptExample
 * ✅ src/PublicModuleIncludeExample
 * ✅ src/IfElseExample
+* (working) src/analysis/example/UserBehavior
 
 
 ## Restart mlsql lang language server
