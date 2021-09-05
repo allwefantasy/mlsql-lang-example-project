@@ -2,7 +2,9 @@
 
 This is a mlsql-lang example project.
 
-> Notice: Work for mslql-lang-vscode-plugin 0.0.4
+> Notice: 
+> 1. Work for mslql-lang-vscode-plugin 0.0.4
+> 2. Mac/Linux is tested. Windows is not test yet.
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 2. Install mlsql-lang vscode plugin from [mlsql-lang-vscode-plugin/github](https://github.com/allwefantasy/mlsql-lang-vscode-plugin) or  [mlsql-lang-vscode-plugin/gitee](https://gitee.com/allwefantasy/mlsql-lang-vscode-plugin)
