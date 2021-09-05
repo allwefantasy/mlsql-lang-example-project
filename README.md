@@ -2,10 +2,17 @@
 
 This is a mlsql-lang example project.
 
-1. Install mlsql-lang vscode plugin: [mlsql-lang-vscode-plugin/github](https://github.com/allwefantasy/mlsql-lang-vscode-plugin) or  [mlsql-lang-vscode-plugin/gitee](https://gitee.com/allwefantasy/mlsql-lang-vscode-plugin)
-2. Open this project with vscode
+> Notice: Work for mslql-lang-vscode-plugin 0.0.4
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/)
+2. Install mlsql-lang vscode plugin from [mlsql-lang-vscode-plugin/github](https://github.com/allwefantasy/mlsql-lang-vscode-plugin) or  [mlsql-lang-vscode-plugin/gitee](https://gitee.com/allwefantasy/mlsql-lang-vscode-plugin)
+3. Open this project with vscode
 
 ### Examples
+
+
+Before you can run all this examples(contains python script), modify 
+`./src/common/PyHeader.mlsql` and set properly python env.
 
 * ✅ src/ExcelExample
 * ✅ src/MySQLConnectExample

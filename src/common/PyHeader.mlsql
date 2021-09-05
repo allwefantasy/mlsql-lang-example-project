@@ -1,7 +1,12 @@
 /**
-改成适合自己的环境
+default python env:
 
-默认环境可按如下方式设置：
 !python env "PYTHON_ENV=:";
+
+change to your own python env:
+
+!python env "PYTHON_ENV=source /Users/allwefantasy/opt/anaconda3/bin/activate ray1.3.0";
 **/
+
+
 !python env "PYTHON_ENV=source /Users/allwefantasy/opt/anaconda3/bin/activate ray1.3.0";
