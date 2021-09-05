@@ -1,0 +1,16 @@
+include hdfs.`./src/common/PyHeader.mlsql`;
+
+!python conf "schema=st(field(content,string),field(mime,string))";
+
+!assert input in __set__  ''' input is missing. Try set input=""; ''';
+!assert x in __session__  ''' x is missing. Try !python conf "x=???";; ''';
+!assert y in __session__   ''' y is missing. Try !python conf "y=???";; ''';
+!assert yName in __session__   ''' yName is missing. Try !python conf "yName=???";; ''';
+!assert title in __session__  ''' title is missing. Try !python conf "title=???";; ''';
+
+!pyInclude project './src/common/curve.py' rawCurve;
+
+run command as Ray.`` where 
+inputTable="${input}"
+and outputTable="output"
+and code='''py.rawCurve''';
