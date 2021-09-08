@@ -1,0 +1,6 @@
+register ScriptUDF.`` as arrayLast where 
+lang="scala"
+and code='''def apply(a:Seq[String])={
+      a.last
+}'''
+and udfType="udf";

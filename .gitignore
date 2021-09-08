@@ -7,3 +7,4 @@
 src/PP.mlsqlnb
 example-data/custom-download
 .vscode
+*.tgz

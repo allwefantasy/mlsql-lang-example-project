@@ -2,8 +2,8 @@ connect jdbc where
  url="jdbc:mysql://127.0.0.1:3306/wow?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false"
  and driver="com.mysql.jdbc.Driver"
  and user=""
- and password=""
+ and password="#[[ YOUR_PASSOWRD ]]#"
  as mysql_instance;
 
- load jdbc.`mysql_instance.【TABLE NAME】` as mysql_table;
+ load jdbc.`mysql_instance. YOUR TABLE NAME` as mysql_table;
  select * from mysql_table limit 10 as output;

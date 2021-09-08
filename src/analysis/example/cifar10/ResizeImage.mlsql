@@ -1,0 +1,48 @@
+!sh wget "https://github.com/allwefantasy/spark-deep-learning-toy/releases/download/v0.01/cifar.tgz";
+!sh mkdir -p /tmp/cifar10;
+!sh tar -xf "cifar.tgz" "-C" "/tmp/cifar10";
+
+include project.`./src/common/PyHeader.mlsql`;
+
+load binaryFile.`/tmp/cifar10/cifar/train/*.png` as cifar10;
+
+!python conf "cache=true";
+!python conf "schema=st(field(content,binary),field(path,string))";
+!python conf "dataMode=data";
+
+
+run command as Ray.`` where 
+inputTable="cifar10"
+and outputTable="cifar10_resize"
+and code='''
+import io,cv2,numpy as np
+from pyjava.api.mlsql import RayContext
+
+ray_context = RayContext.connect(globals(),"127.0.0.1:10001")
+
+def resize_image(row):
+    new_row = {}
+    image_bin = row["content"]    
+    oriimg = cv2.imdecode(np.frombuffer(io.BytesIO(image_bin).getbuffer(),np.uint8),1)
+    newimage = cv2.resize(oriimg,(28,28))
+    is_success, buffer = cv2.imencode(".png", newimage)
+    io_buf = io.BytesIO(buffer)
+    new_row["content"]=io_buf.getvalue()
+    new_row["path"]=row["path"]
+    return new_row
+
+ray_context.foreach(resize_image)
+''';
+
+-- 引入一些函数，方便在SQL中使用
+include project.`./src/common/functions.mlsql`;
+
+-- 这里，arrayLast 函数来源于 ./src/common/functions.mlsql 中
+
+select arrayLast(split(path,"/")) as fileName,content  
+from cifar10_resize 
+as final_dataset;
+
+save overwrite final_dataset as image.`/tmp/size-28x28` 
+where imageColumn="content" 
+and fileName="fileName";
