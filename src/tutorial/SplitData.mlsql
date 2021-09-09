@@ -1,0 +1,13 @@
+/**
+RateSampler can be used to split data into serveral pieces. It 
+will add a mark column which named `__split__` to the new table.
+**/
+
+include project.`./src/common/mock_data.mlsql`;
+
+
+run mock_data as RateSampler.`` where sampleRate="0.9,0.1" 
+and labelCol="label" as marked_dataset;
+
+select * from marked_dataset where __split__=1 as test_data;
+select * from marked_dataset where __split__=0 as train_data;
