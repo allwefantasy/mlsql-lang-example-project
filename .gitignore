@@ -9,3 +9,5 @@ example-data/custom-download
 .vscode
 *.tgz
 pp.*
+.DS_Store
+store

@@ -1,0 +1,6 @@
+<all>
+<one myOneAttrib="AAAA">
+    <two>two</two>
+    <three>three</three>
+</one>
+<all>
