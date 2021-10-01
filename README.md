@@ -41,7 +41,7 @@ Select File > Open...  and choose the location where we unzip this project.
 
 ## Tutorial
 
-1. ./src/try_mlsql is a good start point for you to learn MLSQL.
-2. ./src/a_tour_of_mlsql you can learn full picture of MLSQL Lang.
+1. `./src/try_mlsql` is a good start point for you to learn MLSQL.
+2. `./src/a_tour_of_mlsql` you can learn full picture of MLSQL Lang.
 
 
