@@ -1,58 +1,47 @@
-## Mlsql-lang vscode example project
+# MLSQL Lang example project
 
 This is a mlsql-lang example project.
 
-> Notice: 
-> 1. Work with mslql-lang-vscode-plugin 0.0.4
-> 2. Mac/Linux is tested. Windows is not test yet.
-
-1. Install [Visual Studio Code](https://code.visualstudio.com/)
-2. Install mlsql-lang vscode plugin from 
-   
-   * [mlsql-lang-vscode-plugin/github](https://github.com/allwefantasy/mlsql-lang-vscode-plugin) or   
-   * [mlsql-lang-vscode-plugin/gitee](https://gitee.com/allwefantasy/mlsql-lang-vscode-plugin)
-
-3. Open this project with vscode
-
-### Examples
+## Installation MLSQL Lang VSCode plugin
 
 
-Before you can run all this examples(contains python script), modify 
-`./src/common/PyHeader.mlsql` and set properly python env.
-
-* ✅ src/ExcelExample
-* ✅ src/MySQLConnectExample
-* ✅ src/SimpleMLExample
-* ✅ src/PythonScriptExample
-* ✅ src/PublicModuleIncludeExample
-* ✅ src/IfElseExample
-* (working) src/analysis/example/UserBehavior
+1. Download [Visual Studio Code](https://kyligence.feishu.cn/docs/doccnVlsVfEFsD9YQYeSm9i1Hty#)
+2. Download MLSQL Lang VSCode plugin
+    * [Winwdows](http://download.mlsql.tech/mlsql-win-0.0.6.vsix)
+    * [Mac](http://download.mlsql.tech/mlsql-mac-0.0.6.vsix)
+    * [Linux](http://download.mlsql.tech/mlsql-linux-0.0.6.vsix)
 
 
-## Restart mlsql lang language server
 
-Run command in vscode:  Developer: Reload Window
+After installation of `Visual Studio Code` , switch to  `Extensions` tab, click `...` on right side of search bar, find the item `Install from VSIX...`, choose the VSCode plugin we had already downloaded in preview step and intall it.
 
-### ExcelExample
+![](http://store.mlsql.tech/upload_images/fcc2091a-db9a-4248-96d9-680bc32a7594.png)
 
-![](docs/images/excel.png)
 
-### IfElseExample
+Notice that for now we only support Ligt theme in vscode.
+Select Code > Preferences > Color Theme :
 
-![](docs/images/ifelse.png)
+![](http://store.mlsql.tech/upload_images/011d67b6-0a98-445f-9e59-8c940462718e.png)
 
-### MySQLConnectExample
 
-![](docs/images/jdbc.png)
+In command palette popup，select the light color:
 
-### SimpleMLExample
+![](http://store.mlsql.tech/upload_images/96b0e81f-1856-4c8a-9bb6-84d8180e7968.png)
 
-![](docs/images/simple-ml.png)
+## Download this project
 
-### PythonScriptExample
+Click `Clone or download` and select  `Download ZIP`, then you get the package of this project. Unzip it in you desktop.
 
-![](docs/images/python-script.png)
+![](http://store.mlsql.tech/upload_images/f67b7e1d-968d-4a2f-af36-3c0e14730d83.png)
 
-### PublicModuleIncludeExample
 
-![](docs/images/module.png)
+## Open this project in vscode
+
+Select File > Open...  and choose the location where we unzip this project.
+
+## Tutorial
+
+1. ./src/try_mlsql is a good start point for you to learn MLSQL.
+2. ./src/a_tour_of_mlsql you can learn full picture of MLSQL Lang.
+
+
