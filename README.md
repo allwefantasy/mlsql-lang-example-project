@@ -47,13 +47,13 @@ Select File > Open...  and choose the location where we unzip this project.
 
 ## ./src/try_mlsql
 
-![./src/try_mlsql_1.png](./src/try_mlsql_1.png)
-![./src/try_mlsql_2.png](./src/try_mlsql_2.png)
+![./src/try_mlsql_1.png](./src/images/try_mlsql_1.png)
+![./src/try_mlsql_2.png](./src/images/try_mlsql_2.png)
 
 
 ## ./src/a_tour_of_mlsql
 
-![./src/tour_1.png](./src/tour_1.png)
-![./src/tour_2.png](./src/tour_2.png)
+![./src/tour_1.png](./src/images/tour_1.png)
+![./src/tour_2.png](./src/images/tour_2.png)
 
 
