@@ -2,7 +2,7 @@
 
 This is a mlsql-lang example project.
 
-## Installation MLSQL Lang VSCode plugin
+## Installation Of MLSQL Lang IDE
 
 
 1. Download [Visual Studio Code](https://kyligence.feishu.cn/docs/doccnVlsVfEFsD9YQYeSm9i1Hty#)
