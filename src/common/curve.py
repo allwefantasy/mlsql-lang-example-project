@@ -1,5 +1,4 @@
 from pyjava.api.mlsql import RayContext,PythonContext
-import pandas as pd
 from pyecharts import options as opts
 from pyecharts.charts import Line
 import os

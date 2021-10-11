@@ -1,6 +1,3 @@
--- 引入统一的python环境设置
-include hdfs.`./src/common/PyHeader.mlsql`;
-
 !python conf "schema=st(field(content,string),field(mime,string))";
 
 -- 检查用户是否设置了必要的参数
