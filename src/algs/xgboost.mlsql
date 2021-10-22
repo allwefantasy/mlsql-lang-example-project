@@ -1,0 +1,33 @@
+/**
+Usage:
+
+include local.`libCore.alg.xgboost`;
+**/
+
+!assert inputTable in __set__  ''' inputTable is missing. Try set inputTable="" ''';
+!assert rayAddress in __set__ ''' rayAddress is missing. Try set rayAddress="127.0.0.1:10001" ''';
+
+set inModule="true" where type="defaultParam";
+set rayAddress="127.0.0.1:10001" where type="defaultParam";
+set outputTable="xgboost_model" where type="defaultParam";
+
+!python conf "rayAddress=${rayAddress}";
+!python conf "runIn=driver";
+!python conf "schema=file";
+!python conf "dataMode=model";
+
+-- 引入python脚本
+!if ''' :inModule == "true" ''';
+!then;
+    !println "include from module";
+    !pyInclude local 'github.com/allwefantasy/lib-core.alg.xgboost.py' rawXgboost;
+!else;
+    !println "include from project";
+    !pyInclude project 'src/algs/xgboost.py' rawXgboost;
+!fi;    
+
+-- 运行python脚本
+run command as Ray.`` where 
+inputTable="${inputTable}"
+and outputTable="${outputTable}"
+and code='''py.rawXgboost''';
