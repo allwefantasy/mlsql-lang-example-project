@@ -5,7 +5,7 @@ This is a mlsql-lang example project.
 ## Installation Of MLSQL Lang IDE
 
 
-1. Download [Visual Studio Code](https://kyligence.feishu.cn/docs/doccnVlsVfEFsD9YQYeSm9i1Hty#)
+1. Download [Visual Studio Code](https://code.visualstudio.com/)
 2. Download MLSQL Lang VSCode plugin
     * [Winwdows](http://download.mlsql.tech/mlsql-win-0.0.6.vsix)
     * [Mac](http://download.mlsql.tech/mlsql-mac-0.0.6.vsix)
