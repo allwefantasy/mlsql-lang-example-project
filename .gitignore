@@ -11,3 +11,4 @@ example-data/custom-download
 pp.*
 .DS_Store
 store
+/tmp

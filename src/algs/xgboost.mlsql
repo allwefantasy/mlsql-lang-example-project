@@ -20,10 +20,10 @@ set outputTable="xgboost_model" where type="defaultParam";
 !if ''' :inModule == "true" ''';
 !then;
     !println "include from module";
-    !pyInclude local 'github.com/allwefantasy/lib-core.alg.xgboost.py' rawXgboost;
+    !pyInclude local 'github.com/allwefantasy/lib-core.alg.xgboost.py' named rawXgboost;
 !else;
     !println "include from project";
-    !pyInclude project 'src/algs/xgboost.py' rawXgboost;
+    !pyInclude project 'src/algs/xgboost.py' named rawXgboost;
 !fi;    
 
 -- 运行python脚本
