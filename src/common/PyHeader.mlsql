@@ -5,8 +5,8 @@ default python env:
 
 change to your own python env:
 
-!python env "PYTHON_ENV=source /Users/allwefantasy/opt/anaconda3/bin/activate ray1.3.0";
+!python env "PYTHON_ENV=source /opt/miniconda3/bin/activate ray1.8.0";
 **/
 
 
-!python env "PYTHON_ENV=source /Users/allwefantasy/opt/anaconda3/bin/activate ray1.3.0";
+!python env "PYTHON_ENV=source /opt/miniconda3/bin/activate ray1.8.0";

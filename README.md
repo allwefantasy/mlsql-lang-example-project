@@ -43,17 +43,43 @@ Select File > Open...  and choose the location where we unzip this project.
 
 1. `./src/try_mlsql` is a good start point for you to learn MLSQL.
 2. `./src/a_tour_of_mlsql` you can learn full picture of MLSQL Lang.
+3. `./src/examples/examples` there are many mlsql code snippets in this notebook.
+4. `./analysis/example/cifar10/ResizeImage` teach you how to processing image distributly.
+5. `./analysis/example/cifar10/DistributeTFTrainning` teach you how to train DL by tensorflow distributly.
 
+## Python Script Support
 
-## ./src/try_mlsql
+`Ray` is a build-in plugin in MLSQL which can execute Python script. 
 
-![./src/try_mlsql_1.png](./src/images/try_mlsql_1.png)
-![./src/try_mlsql_2.png](./src/images/try_mlsql_2.png)
+The power part is that you can 
+access the data in target table in Python and pass the result processed back as a new table.
 
+Some limitation for now:
 
-## ./src/a_tour_of_mlsql
+1. The schema of python output should be specified mannually.
 
-![./src/tour_1.png](./src/images/tour_1.png)
-![./src/tour_2.png](./src/images/tour_2.png)
+```shell
+!python conf "schema=st(field(a,long))";
+```
+
+The basic python dependencies:
+
+```
+pyarrow==4.0.1
+ray>=1.3.0
+pandas>=1.0.5; python_version < '3.7'
+pandas>=1.2.0; python_version >= '3.7'
+requests
+matplotlib~=3.3.4
+uuid~=1.30
+pyjava
+```
+
+Suppose you can have created virtual python enviroment called `ray1.8.0` (this will used by example in this project by default). 
+
+```
+conda create  --name ray1.8.0 python=3.6
+```
+and make sure you have the aforementioned dependencies are also installed.
 
 
