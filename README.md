@@ -66,7 +66,8 @@ The basic python dependencies:
 
 ```
 pyarrow==4.0.1
-ray>=1.3.0
+ray[default]
+aiohttp==3.7.4
 pandas>=1.0.5; python_version < '3.7'
 pandas>=1.2.0; python_version >= '3.7'
 requests
