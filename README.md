@@ -45,7 +45,7 @@ Select File > Open...  and choose the location where we unzip this project.
 2. `./src/a_tour_of_mlsql` you can learn full picture of MLSQL Lang.
 3. `./src/examples/examples` there are many mlsql code snippets in this notebook.
 4. `./analysis/example/cifar10/ResizeImage` teach you how to processing image distributly.
-5. `./analysis/example/cifar10/DistributeTFTrainning` teach you how to train DL by tensorflow distributly.
+5. `./analysis/example/cifar10/DistributeTFTrainning` teach you how to train DL by tensorflow distributly and deploy model as UDF .
 
 ## Python Script Support
 
